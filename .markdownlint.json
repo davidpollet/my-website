@@ -1,0 +1,9 @@
+{
+  "MD034": false,
+  "MD013": false,
+  "MD025": false,
+  "MD022/blanks-around-headings": false,
+  "no-trailing-punctuation": {
+    "punctuation": ".,;:"
+  }
+}
