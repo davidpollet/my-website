@@ -1,3 +1,9 @@
 {
-  "proseWrap": "always"
+  "proseWrap": "always",
+  "overrides": [
+    {
+      "files": ".nvmrc",
+      "options": { "parser": "yaml" }
+    }
+  ]
 }
