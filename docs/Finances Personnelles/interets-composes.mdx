@@ -1,0 +1,32 @@
+---
+title: Les intérêts composés
+---
+
+import { toCurrency } from "@site/src/utils/format";
+
+Les intérêts sont composés quand les intérêts que tu as perçus entrent dans le calcul des intérêts à
+venir. Par exemple, tu places {toCurrency(1000)} à 5% :
+
+- **Année 1 :** tu finis avec {toCurrency(1050)}, soit {toCurrency(50)} d’intérêts.
+- **Année 2 :** tes intérêts sont calculés sur les {toCurrency(1050)} que tu as, donc tu finis avec
+  {toCurrency(1102.50)}, soit {toCurrency(52.50)} d’intérêts.
+- **Année 3 :** tes intérêts sont calculés sur les {toCurrency(1102.50)} que tu as, donc tu finis
+  avec {toCurrency(1102.50)}, soit {toCurrency(55.10)} d’intérêts.
+
+Pour tirer un maximum de bénéfice des intérêts composés, il faut investir (ou épargner) tôt,
+régulièrement et durant une longue période.
+
+Par exemple, <mark>en investissant {toCurrency(100)} tous les mois pendant 30 ans, avec un taux
+d'intérêts annuel de 5,00 %</mark>, **tu finiras avec {toCurrency(79_727)}** : {toCurrency(36_000)}
+de versement et {toCurrency(79_727 - 36_000)} d'intérêts. Tu as plus que doubler ta mise ! 💸
+
+Et avec la même simulation, mais à 6,00%, tu finis avec un capital de {toCurrency(94_870)}, soit
+{toCurrency(94_870 - 36_000)} d'intérêts !
+
+:::info
+
+Tu peux calculer les intérêts composés que tu pourrais générer selon ton cas
+avec[ cette calculette](https://finary.com/fr/tools/compound-interests-calculator?initial_capital=0&monthly_savings=100&investment_horizon=30&interest_rate=5&interest_rate_every_x_months=12),
+ou tu peux trouver des en trouver sur Google si elle n'est plus disponible
+
+:::
