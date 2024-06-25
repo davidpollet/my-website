@@ -1,0 +1,130 @@
+---
+title: La bourse
+slug: tout-comprendre-de-la-bourse
+---
+
+import { toCurrency } from "@site/src/utils/format";
+
+La bourse, c'est une place de marché où tout le monde peut acheter ou vendre des actions
+d'entreprise. Une action d'entreprise, c'est une part de celle-ci. Quand on a une action Google, on
+devient actionnaire de Google parce qu'on en détient une toute petite part.
+
+Il existe plusieurs places de marché comme _Euronext_ pour l'Europe, le _Nasdaq_ ou encore le _New
+York Stock Exchange_ aux États-Unis. Voici
+[la liste des places boursière dans le monde](https://fr.wikipedia.org/wiki/Liste_des_places_boursi%C3%A8res).
+
+## Pourquoi les entreprises sont en bourse ?
+
+En vendant des parts d'elle-même, l'entreprise espère récupérer le plus de cash possible pour
+financer sa croissance sans s'endetter. Et ceux qui achètent ses parts croient pouvoir faire une
+plus-value plus ou moins conséquente à une échéance plus ou moins grande. À raison ou à tort parce
+que forcement, ce n'est jamais sans risque.
+
+N'importe quelle entreprise peut entrer en bourse, mais ce n'est pas sans conséquence. Elle sera
+contrainte à une réglementation lourde et contraignante parce que les autorités essaient de protéger
+au mieux les investisseurs.
+
+### Exemple : Entrée en Bourse de la Société "TechInnov"
+
+La société TechInnov, une entreprise technologique innovante, décide d'aller en bourse pour pouvoir
+financer sa croissance et ses projets de recherche et développement. Voici le process qui lui
+permettra d'atteindre son objectif :
+
+    <ol>
+      <li>
+        <strong>Évaluation des Besoins de Financement :</strong> TechInnov estime qu'elle a besoin
+        de 200 millions d'euros pour financer ses projets futurs.
+      </li>
+      <li>
+        <strong>Engagement des Banques d'Investissement :</strong> TechInnov engage plusieurs
+        banques d'investissement pour les conseiller et souscrire l'introduction en bourse (IPO).
+        Ces banques réalisent une évaluation détaillée de l'entreprise.
+      </li>
+      <li>
+        <strong>Évaluation Financière :</strong> Après avoir analysé les états financiers de
+        TechInnov, les banques d'investissement estiment que la valeur totale de l'entreprise est
+        d'environ 1 milliard d'euros.
+      </li>
+      <li>
+        <strong>Détermination du Nombre d'Actions :</strong> TechInnov décide de vendre 20 % de son
+        capital en bourse. Cela signifie qu'elle émettra des actions représentant 20 % de la valeur
+        totale de l'entreprise.
+        <ul>
+          <li>Valeur totale de l'entreprise : 1 milliard d'euros</li>
+          <li>20 % de cette valeur : 200 millions d'euros</li>
+          <li>
+            Si TechInnov choisit de diviser son capital en 100 millions d'actions, elle émettra 20
+            millions d'actions nouvelles pour lever les 200 millions d'euros nécessaires.
+          </li>
+        </ul>
+      </li>
+      <li>
+        <strong>Roadshow et Bookbuilding :</strong> Les banques d'investissement organisent un
+        roadshow pour présenter TechInnov aux investisseurs institutionnels et recueillir leurs
+        intentions d'achat.
+        <ul>
+          <li>
+            Supposons que pendant le roadshow, les investisseurs montrent un fort intérêt pour
+            TechInnov, et les banques d'investissement reçoivent des intentions d'achat qui
+            suggèrent un prix par action entre {toCurrency(9)} et {toCurrency(11)}.
+          </li>
+        </ul>
+      </li>
+      <li>
+        <strong>Fixation du Prix de Départ :</strong> Après avoir analysé les intentions d'achat et
+        les conditions du marché, les banques d'investissement recommandent un prix d'introduction
+        de {toCurrency(10)} par action.
+        <ul>
+          <li>Nombre total d'actions émises : 20 millions</li>
+          <li>Prix par action : {toCurrency(10)}</li>
+          <li>
+            Montant total levé : 20 millions d'actions * {toCurrency(10)} = 200 millions d'euros
+          </li>
+        </ul>
+      </li>
+      <li>
+        <strong>Allocation des Actions :</strong> Les 20 millions d'actions sont allouées aux
+        différents investisseurs qui ont exprimé leur intérêt. Les investisseurs institutionnels
+        comme les fonds de pension et les fonds mutuels reçoivent une grande partie des actions,
+        tandis qu'une partie est réservée aux investisseurs individuels.
+      </li>
+      <li>
+        <strong>Entrée en Bourse :</strong> Le jour de l'introduction en bourse, les actions de
+        TechInnov commencent à être échangées sur la place de marché choisie (par exemple, Euronext
+        Paris) au prix initial de {toCurrency(10)} par action. Si la demande est forte, le prix peut
+        augmenter dès les premières transactions.
+      </li>
+    </ol>
+    <h3>Résumé</h3>
+    <ul>
+      <li>
+        TechInnov lève 200 millions d'euros en émettant 20 millions d'actions à {toCurrency(10)}{" "}
+        chacune.
+      </li>
+      <li>
+        Les fonds levés sont utilisés pour financer la croissance et les projets de R&D de
+        TechInnov.
+      </li>
+      <li>
+        Les investisseurs qui ont acheté des actions espèrent réaliser une plus-value si la valeur
+        des actions augmente avec le succès futur de l'entreprise.
+      </li>
+    </ul>
+
+## Les États et la bourse : les obligations
+
+Les obligations sont ni plus ni moins qu'un prêt contracté par un État sur une place de marché.
+Contrairement à une action, le rendement est connu à l'avance, tout comme la durée de
+l'investissement.
+
+Plus les finances du pays emprunteur sont solides, moins il y aura de risque de défaut de paiement,
+ce qui signifie également un rendement plus faible. En revanche, un pays en difficulté financière
+devra emprunter à un taux d'intérêt plus élevé pour attirer les investisseurs.
+
+Par exemple, si tu prêtes {toCurrency(1000)} à la France à un taux de 5% sur 5 ans, tu récupéreras
+{toCurrency(50)} chaque année, soit un total de {toCurrency(250)} de bénéfices au terme de la
+période. Pas [d'intérêts composés](./interets-composes) pour ce type d'investissement.
+
+Investir dans de la dette permet de performer mieux qu'un livret, mais moins bien que des actions
+**bien choisies (⚠️)**. Ce choix est à faire en fonction de ta situation et ta capacité à supporter
+des pertes.
