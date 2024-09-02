@@ -1,41 +1,82 @@
+---
+title: Comment investir en bourse ?
+---
+
 import { toCurrency } from "@site/src/utils/format";
 
-# Comment investir en bourse ?
+## L'état d'esprit à avoir avant de commencer
 
-## L'état d'esprit à avoir
+1. Il faut viser le long terme.
+2. Si tu fais du DCA (expliqué après), ne jamais dévier de ton plan. Si ça baisse fortement, ne
+   panique pas, dis-toi que ce sont les soldes et profites-en, si c'est possible. Ne vends pas.
+   L'histoire montre que ça finit toujours par se redresser, même si ça peut prendre beaucoup de
+   temps.
+3. Plus tu approches de ton objectif (ex : retraite), plus la part d'actif sécuritaire doit être
+   élevée.
 
-Il faut plutôt miser sur le long terme en étant le plus passif possible. De nombreuses études
-montrent qu'acheter et vendre fréquemment pour essayer d'obtenir une performance exceptionnelle est
-souvent contre-productif.
+## Les types d'investissements
 
-Et si ça baisse, ne panique pas. Au contraire, si tu continues à verser la même somme tous les mois,
-tu obtiendras plus d'actions à moindre coût, et quand le marché remontera, ta plus-value n'en sera
-que plus belle. Ce conseil est valable si tu as un portefeuille diversifié et solide. Si tu as tout
-misé sur une seule entreprise et qu'elle est en difficulté, tu devras évaluer la situation pour
-décider de la meilleure marche à suivre.
+### Le trading
 
-## La flat tax
+Le trading consiste à acheter et vendre fréquemment les actions de ton portefeuille dans l'espoir de
+surpasser les indices boursiers. Cette approche est réservée aux passionnés et aux professionnels,
+parce qu'elle nécessite une veille constante et une analyse approfondie des marchés.
 
-C'est une taxe sur les bénéfices que tu fais quand tu investis en bourse. Elle est composée de
-12,8 % d’impôt sur le revenu et de 17,2 % de prélèvements sociaux. Deux cas où tu devras passer à la
-caisse :
+### Le stock picking
 
-- **Sur tes plus-values :** tu achètes une action d'une entreprise pour { toCurrency(10) } et tu as
-  bien senti le coup parce qu'elle est grimpée à {toCurrency(100)} sur l'année. Tu décides de
-  vendre. Tu as fait {toCurrency(90)} de bénéfice, donc tu devras {toCurrency(27)} ({toCurrency(90)}
-  × 30 %). Si tu ne vends pas, la flat tax ne s'applique pas.
-- **Sur les dividendes reçus :** Chaque année, les entreprises versent une partie de leur bénéfice à
-  leurs actionnaires. Si tu en fais partie, tu reçois de l'argent et celui-ci est soumis à la flat
-  tax.
+Le stock picking implique de sélectionner des actions d'entreprises que tu estimes sous-évaluées ou
+ayant un fort potentiel de croissance. Cette méthode est également destinée aux passionnés et aux
+professionnels parce qu'il faut passer du temps : il faut analyser les bilans financiers des
+entreprises, comprendre la vision de leurs dirigeants, et suivre de près leur évolution.
 
-## Le compte titre
+### Le Dollar Cost Averaging (DCA)
+
+Le DCA (Dollar Cost Averaging) consiste à investir régulièrement une somme fixe chaque mois ou
+trimestre dans les mêmes actions ou ETFs, sans tenir compte des fluctuations de prix du marché.
+Cette stratégie permet de lisser le coût d'achat des actions, en achetant parfois à des prix plus
+élevés, parfois à des prix plus bas.
+
+C'est une méthode recommandée pour les débutants pour plusieurs raisons :
+
+- C'est très simple à mettre en œuvre
+- Elle ne nécessite que de quelques minutes par mois
+- Elle ne laisse pas de place à l'émotion et à l'impulsion
+- Tu profites de l'effet de l'accumulation à long terme
+
+## Les supports d'investissements
+
+### Le compte titre
 
 C'est un compte bancaire où l'on peut acheter et stocker des produits boursiers. On choisit le
 compte titre quand on veut avoir accès aux actions du monde entier, ou que les plafonds des autres
 solutions ont été atteints. D'un point de vue fiscalité, il est soumis à la flat tax de 30% dès que
 tu reçois de l'argent (vente d'actions ou dividendes).
 
-## Assurance-vie
+#### Les plus :
+
+- **Aucune limitation :** tu peux investir dans ce que tu veux (action, obligation, matières
+  premières) et il n'y a aucun plafond.
+- **Liquidité :** Même si c'est fortement déconseillé parce que ça ruinerait tous tes efforts pour
+  constituer ton capital, tu peux retirer ton argent librement sans provoquer la fermeture de ton
+  compte.
+- **Ouvert aux mineurs** : si tu veux en ouvrir un pour tes enfants, c'est possible.
+
+#### Les moins : La fiscalité
+
+Tu dois payer dès que tu fais des bénéfices ou que tu reçois des dividendes. Tu as obligatoirement
+17,2% de prélèvements sociaux à payer. Pour l'impôt, tu as deux choix :
+
+- **Le prélèvement forfaitaire unique** : 12.8% de tes bénéfices.
+- **Impôt sur le revenu** : inclure tes bénéfices dans tes revenus. Ça peut être intéressant si tu
+  ne payes pas ou peu d'impôt par exemple.
+
+:::info
+
+Pour les dividendes, les prélèvements sociaux sont généralement pris à la source.
+
+:::
+
+### Assurance-vie
 
 Avec un nom pareil, on s'attend naturellement à ce que ce soit une enveloppe qu'on léguera à nos
 enfants quand on sera canné. Et ce n'est pas du tout ça. :)
@@ -68,12 +109,12 @@ pour ton "toi" du futur. Il aura moins d'impôt à payer. :)
 
 :::
 
-## Le P.E.A. (Plan d'Épargne Action)
+### ⭐️ Le P.E.A. (Plan d'Épargne Action)
 
 Le P.E.A est une enveloppe fiscale qui offre des avantages fiscaux après un délai de cinq ans. Son
 plafond est de {toCurrency(150_000)} par personne. Voici ses avantages et ses inconvénients :
 
-### Les plus :
+#### Les plus :
 
 - **Avantage fiscal après 5 ans :** Au bout de 5 ans, les gains sont exonérés d'impôt sur le revenu.
   Seuls les prélèvements sociaux de 17,2% s'appliquent.
@@ -83,13 +124,16 @@ plafond est de {toCurrency(150_000)} par personne. Voici ses avantages et ses in
 - **Pas d'Imposition tant que l'argent reste dans le P.E.A :** tu peux acheter et vendre des actions
   autant que tu le souhaites sans imposition tant que tu ne retires pas d'argent du P.E.A.
 
-### Les moins :
+#### Les moins :
 
 - **Actions Disponibles :** Les actions disponibles sont principalement européennes, bien qu'il
   existe une possibilité d'investir dans des ETF pour diversifier géographiquement.
 - **Fermeture du P.E.A en cas de Retrait :** Tout retrait avant 5 ans entraîne la fermeture du
   P.E.A.
 - **Limitation :** Un seul P.E.A par personne.
+
+C'est généralement le support de choix pour commencer à investir en bourse grâce à sa fiscalité
+avantageuse.
 
 :::info
 
@@ -98,12 +142,12 @@ tôt possible.
 
 :::
 
-## Le P.E.R. (Plan d'Épargne Retraite)
+### Le P.E.R. (Plan d'Épargne Retraite)
 
 Le PER, c'est une enveloppe pour mettre de côté pour ta retraite tout en bénéficiant de quelques
 avantages fiscaux.
 
-### Les Plus :
+#### Les Plus :
 
 - **Déduction des Versements** : Chaque euro que tu mets dans ton PER peut être déduit de ton revenu
   imposable. Si, par exemple, tu places {toCurrency(10_000)} par an sur ton PER et que ta tranche
@@ -117,7 +161,7 @@ avantages fiscaux.
 - **Choix des Supports d'Investissement** : Tu peux investir ton épargne dans différents supports
   (fonds en euros, unités de compte) selon ton profil de risque et tes objectifs.
 
-### Les Moins :
+#### Les Moins :
 
 - **Blocage des Fonds** : Ton argent est bloqué jusqu'à la retraite. Mais il y a quelques exceptions
   pour des cas particuliers (achat de la résidence principale, décès du conjoint, surendettement,
@@ -125,7 +169,7 @@ avantages fiscaux.
 - **Fiscalité à la Sortie** : Quand tu retires ton argent à la retraite, tu paies des impôts dessus,
   sauf dans certains cas de déblocage anticipé.
 
-## En résumé
+### En résumé
 
 - **PER** : Très avantageux pour ceux qui sont dans une tranche d'imposition élevée et qui
   souhaitent se constituer une épargne retraite tout en bénéficiant de déductions fiscales
