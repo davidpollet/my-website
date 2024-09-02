@@ -1,0 +1,111 @@
+---
+title: Pourquoi ça existe et comment ça marche ?
+---
+
+import { toCurrency } from "@site/src/utils/format";
+
+La bourse est une place de marché où tu peux acheter et vendre principalement trois types
+d'instruments financiers :
+
+- **Des actions** : Une action représente une part de propriété dans une entreprise. Par exemple, si
+  tu achètes une action Google, tu deviens actionnaire de Google, ce qui signifie que tu possèdes
+  une petite partie de l'entreprise et que tu peux bénéficier de ses performances (comme les
+  dividendes ou la plus-value).
+
+- **Des obligations** : Une obligation est un titre de créance, c'est-à-dire un prêt que tu fais à
+  une entreprise ou à un gouvernement. En échange, l'émetteur de l'obligation te verse des intérêts
+  sur une période déterminée, et te rembourse le montant initial à l'échéance.
+
+- **Des matières premières** : Aussi appelées "commodités", les matières premières sont des
+  ressources naturelles comme le blé, l'or, le pétrole, etc. Tu peux investir dans ces matières sans
+  les posséder physiquement, généralement via des contrats à terme ou des fonds négociés en bourse
+  (ETFs).
+
+Il existe plusieurs places de marché boursières à travers le monde, telles que _Euronext_ en Europe,
+le _Nasdaq_ et le _New York Stock Exchange (NYSE)_ aux États-Unis. Chaque bourse a ses propres
+règles et ses propres horaires de fonctionnement. Pour plus d'informations, voici
+[la liste des places boursières dans le monde](https://fr.wikipedia.org/wiki/Liste_des_places_boursi%C3%A8res).
+
+## Pourquoi les entreprises sont en bourse ?
+
+En vendant des parts d'elle-même, l'entreprise espère récupérer le plus de cash possible pour
+financer sa croissance sans s'endetter. Et ceux qui achètent ses parts croient pouvoir faire une
+plus-value plus ou moins conséquente à une échéance plus ou moins grande. À raison ou à tort parce
+que forcement, ce n'est jamais sans risque.
+
+N'importe quelle entreprise peut entrer en bourse, mais ce n'est pas sans conséquence. Elle sera
+contrainte à une réglementation lourde et contraignante parce que les autorités essaient de protéger
+au mieux les investisseurs.
+
+### Exemple : Entrée en Bourse de la Société "TechInnov"
+
+La société TechInnov, une entreprise technologique innovante, décide d'aller en bourse pour pouvoir
+financer sa croissance et ses projets de recherche et développement. Voici le process qui lui
+permettra d'atteindre son objectif :
+
+    1.  **Évaluation des Besoins de Financement :** TechInnov estime qu'elle a besoin de 200 millions d'euros pour financer ses projets futurs.
+
+2.  **Engagement des Banques d'Investissement :** TechInnov engage plusieurs banques
+    d'investissement pour les conseiller et souscrire l'introduction en bourse (IPO). Ces banques
+    réalisent une évaluation détaillée de l'entreprise.
+3.  **Évaluation Financière :** Après avoir analysé les états financiers de TechInnov, les banques
+    d'investissement estiment que la valeur totale de l'entreprise est d'environ 1 milliard d'euros.
+4.  **Détermination du Nombre d'Actions :** TechInnov décide de vendre 20 % de son capital en
+    bourse. Cela signifie qu'elle émettra des actions représentant 20 % de la valeur totale de
+    l'entreprise.
+    - Valeur totale de l'entreprise : 1 milliard d'euros
+    - 20 % de cette valeur : 200 millions d'euros
+    - Si TechInnov choisit de diviser son capital en 100 millions d'actions, elle émettra 20
+      millions d'actions nouvelles pour lever les 200 millions d'euros nécessaires.
+5.  **Roadshow et Bookbuilding :** Les banques d'investissement organisent un roadshow pour
+    présenter TechInnov aux investisseurs institutionnels et recueillir leurs intentions d'achat.
+    - Supposons que pendant le roadshow, les investisseurs montrent un fort intérêt pour TechInnov,
+      et les banques d'investissement reçoivent des intentions d'achat qui suggèrent un prix par
+      action entre {toCurrency(9)} et {toCurrency(11)}.
+6.  **Fixation du Prix de Départ :** Après avoir analysé les intentions d'achat et les conditions du
+    marché, les banques d'investissement recommandent un prix d'introduction de {toCurrency(10)} par
+    action.
+    - Nombre total d'actions émises : 20 millions
+    - Prix par action : {toCurrency(10)}
+    - Montant total levé : 20 millions d'actions \* {toCurrency(10)} = 200 millions d'euros
+7.  **Allocation des Actions :** Les 20 millions d'actions sont allouées aux différents
+    investisseurs qui ont exprimé leur intérêt. Les investisseurs institutionnels comme les fonds de
+    pension et les fonds mutuels reçoivent une grande partie des actions, tandis qu'une partie est
+    réservée aux investisseurs individuels.
+8.  **Entrée en Bourse :** Le jour de l'introduction en bourse, les actions de TechInnov commencent
+    à être échangées sur la place de marché choisie (par exemple, Euronext Paris) au prix initial de
+    {toCurrency(10)} par action. Si la demande est forte, le prix peut augmenter dès les premières
+    transactions.
+
+### Résumé
+
+- TechInnov lève 200 millions d'euros en émettant 20 millions d'actions à {toCurrency(10)}{" "}
+  chacune.
+- Les fonds levés sont utilisés pour financer la croissance et les projets de R&D de TechInnov.
+- Les investisseurs qui ont acheté des actions espèrent réaliser une plus-value si la valeur des
+  actions augmente avec le succès futur de l'entreprise.
+
+### Comment les prix évoluent en bourse ?
+
+Le prix d'une action varie principalement en fonction de l'offre et de la demande. Par exemple, si
+TechInnov annonce de très bons résultats financiers ou une percée technologique, il y aura plus
+d'investisseurs qui voudront avoir l'entreprise dans leur portefeuille. Comme il y a un nombre
+limité d'actions, elles iront au plus offrant.
+
+Au contraire, si TechInnov traverse une mauvaise passe, les actionnaires qui perdent confiance
+voudront limiter la casse et se débarrasser de leurs actions. Mais comme il n'y aura pas une forte
+demande, les prix vont baisser.
+
+#### Et au quotidien ?
+
+Concrètement, Paul a 50 actions TechInnov qu'il souhaite vendre. Il ouvre l'application de son
+courtier et fixe ses conditions de vente souhaités : soit au prix du marché, soit à un prix désiré.
+Son broker ajoute l'ordre de vente au carnet d'ordres.
+
+Ailleurs, Bruno veut acheter des actions TechInnov. Il ouvre son application, choisit d'acheter 30
+actions TechInnov au prix du marché, soit au dernier prix auquel l'action a été vendue. Son broker
+ajoute son ordre d'achat au carnet d'ordres.
+
+Les actions de Paul sont en premier dans le carnet d'ordres, donc 30 unités partent dans le
+portefeuille de Bruno. Il reste à Paul 20 actions à vendre, qui seront exécutées avec les prochains
+ordres d'achat disponibles.

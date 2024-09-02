@@ -49,7 +49,10 @@ const config = {
     [
       "@docusaurus/plugin-ideal-image",
       {
-        quality: 80,
+        quality: 70,
+        max: 1200, // taille maximale de l'image redimensionnée.
+        min: 600, // taille minimale de l'image redimensionnée. si l'originale est plus petite, utiliser cette taille.
+        steps: 3, // le nombre maximum d'images générées entre min et max (inclus)
         disableInDev: false,
       },
     ],
