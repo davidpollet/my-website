@@ -91,7 +91,7 @@ const config = {
             type: "docSidebar",
             sidebarId: "notesSidebar",
             position: "left",
-            label: "Notes",
+            label: "Mon Digital Garden",
           },
           /* { to: "/blog", label: "Blog", position: "left" }, */
           {
