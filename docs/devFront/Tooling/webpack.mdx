@@ -1,0 +1,67 @@
+---
+title: Webpack
+---
+
+import Image from "@theme/IdealImage";
+import webpack from "./webpack-bundle.png";
+
+import Tabs from "@theme/Tabs";
+import TabItem from "@theme/TabItem";
+
+## Les fonctionnalités de Webpack
+
+- Bundler les fichiers JavaScripts et CSS
+- Optimiser les assets via les loaders et les plugins
+- Générer des chunk de fichiers pour optimiser le temps de chargement
+- Gérer le versioning des assets en injectant un hash dans le nom du fichier
+- Hot Module Replacement (HMR)
+
+## Webpack vs Vite
+
+Webpack et Vite font le même job, mais sont pensés pour des besoins différents. Vite a une approche
+zéro configuration, pour des développements rapide. Webpack est orienté configuration. Il permet du
+"fine tunning" pour s'adapter aux besoins du projet grâce à un large écosystème de plugins et de
+loaders.
+
+## Comment fonctionne Webpack ?
+
+ℹ️ Exemple de configuration - Code Extrait de
+[SurviveJS - Webpack 5](https://survivejs.com/webpack/)
+
+```js title="webpack.config.js"
+const path = require("path");
+const webpack = require("webpack");
+
+module.exports = {
+  entry: { app: "./main.js" }, // Start bundling
+  output: {
+    path: path.join(__dirname, "dist"), // Output to dist directory
+    filename: "[name].js", // Emit app.js by capturing entry name
+  },
+  // Resolve encountered imports
+  module: {
+    rules: [
+      {
+        test: /\.css$/,
+        use: ["style-loader", "css-loader"],
+      },
+      {
+        test: /\.js$/,
+        use: "swc-loader",
+        exclude: /node_modules/,
+      },
+    ],
+  },
+  // Perform additional processing
+  plugins: [new webpack.DefinePlugin({ HELLO: "hello" })],
+  // Adjust module resolution algorithm
+  resolve: { alias: { react: "preact-compat" } },
+};
+```
+
+<Image
+  img={webpack}
+  style={{ maxWidth: 320, margin: "auto" }}
+  className="dark:invert"
+  alt="Un diagramme qui montre comment fonctionne Webpack. Tout commence par un entry point. Webpack regarde si ce fichier a des modules d'importés. Si oui, il les importe. Si le fichier n'est pas trouvé, Webpack retourne une erreur. Sinon, il l'ajoute au bundle final, puis regarde si ce fichier contient des imports. Et ainsi de suite jusqu'à ce que tous les fichiers aient été traités."
+/>
