@@ -1,9 +1,13 @@
 ---
-import Layout from 'shared/layouts/Layout.astro'
+import Layout from '@shared/layouts/Layout.astro'
 ---
 
 <Layout>
-  <div>David Pollet</div>
-  <div>Développeur front-end</div>
-  <p>I'm cooking… 🧑‍🍳</p>
+  <div class="grid h-screen place-content-center p-4">
+    <div class="font-bold">David Pollet</div>
+    <div class="opacity-65 before:mr-0.5 before:content-['<'] after:ml-0.5 after:content-['/>']">
+      Développeur Front-end
+    </div>
+    <p class="mt-2"><em>I'm cooking …</em> 🧑‍🍳</p>
+  </div>
 </Layout>
